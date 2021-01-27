@@ -133,12 +133,6 @@ table {
     border-spacing: 0;
 }
 
-html,
-body {
-    max-width: 100%;
-    /* overflow-x: hidden; */
-}
-
 html {
     box-sizing: border-box;
 }
@@ -149,28 +143,39 @@ html {
     box-sizing: inherit;
 }
 
+html,
+body {
+    max-width: 100%;
+}
+
 :root {
     --brand-primary: 36deg 100%;
     --brand-secondary: 253deg 61%;
     --twenty: 20%;
-    --tint-50: 50%;
+    --fifty: 50%;
+    --thirty-two: 32%;
     --fifty-alpha: 50%;
     --tint-80: 80%;
     --tint-95: 95%;
+    --not-visited: rgb(79 56 161);
+    --visited: rgb(17 10 41 / 0.85);
     --primary: hsl(var(--brand-primary) 40%);
     --secondary: hsl(var(--brand-secondary) 33%);
     --secondary-tint-95: hsl(var(--brand-secondary) var(--tint-95));
     --secondary-tint-80: hsl(var(--brand-secondary) var(--tint-80));
     --primary-tint-95: hsl(var(--brand-primary) var(--tint-95));
-    --primary-tint-50: hsl(var(--brand-primary) var(--tint-50));
+    --primary-tint-50: hsl(var(--brand-primary) var(--fifty));
     --primary-tint-80: hsl(var(--brand-primary) var(--tint-80));
     --primary-shade-20: hsl(var(--brand-primary) var(--twenty));
+    --primary-shade-50: hsl(var(--brand-primary) var(--thirty-two));
     --primary-shade-20-alpha: hsl( var(--brand-primary) var(--twenty) / --fifty-alpha);
 }
 
 body {
-    box-sizing: border-box;
-    display: grid;
-    place-items: center center;
-    height: 100vh
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    font-family: Poppins;
+    color: #2c1a6e;
+    text-align: left;
 }
