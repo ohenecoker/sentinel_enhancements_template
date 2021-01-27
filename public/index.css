@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://use.typekit.net/opa5euc.css");
 html,
 body,
 div,
@@ -122,6 +124,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html,
+body {
+  max-width: 100%;
+  /* overflow-x: hidden; */
+}
+
+:root {
+  --brand-primary: 36deg 100%;
+  --brand-secondary: 253deg 61%;
+  --twenty: 20%;
+  --tint-50: 50%;
+  --fifty-alpha: 50%;
+  --tint-80: 80%;
+  --tint-95: 95%;
+  --primary: hsl(var(--brand-primary) 40%);
+  --secondary: hsl(var(--brand-secondary) 33%);
+  --secondary-tint-95: hsl(var(--brand-secondary) var(--tint-95));
+  --secondary-tint-80: hsl(var(--brand-secondary) var(--tint-80));
+  --primary-tint-95: hsl(var(--brand-primary) var(--tint-95));
+  --primary-tint-50: hsl(var(--brand-primary) var(--tint-50));
+  --primary-tint-80: hsl(var(--brand-primary) var(--tint-80));
+  --primary-shade-20: hsl(var(--brand-primary) var(--twenty));
+  --primary-shade-20-alpha: hsl(
+    var(--brand-primary) var(--twenty) / --fifty-alpha
+  );
+}
+
 body {
   background-size: cover;
   height: 100vh;
@@ -129,5 +159,4 @@ body {
   font-family: Poppins;
   color: #2c1a6e;
   text-align: left;
-  background: rgba(11, 7, 27, 0.6);
 }
